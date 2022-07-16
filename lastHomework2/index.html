@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang='ja'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Yuta YOSHINO">
+    <meta name="keywords" content="World Heritage Site">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>世界遺産について学ぼう！</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>世界遺産について学ぼう</h1>
+        <nav id="menu">
+            <ul>
+                <li>ホーム</li>
+                <li>タグリファレンス</li>
+                <li>問い合わせ</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>世界遺産QUIZ</h2>
+        <p class="prob">世界遺産の問題に挑戦してみよう！</p>
+        <div class="flex-container">
+            <main>
+                <div>
+                    <h3>第1問　2021年現在、日本の世界遺産はUNESCOに何件登録されていますか？</h3>
+                    <button type="button" onclick="quiz1(0)">15件</button>
+                    <button type="button" onclick="quiz1(1)">25件</button>
+                    <button type="button" onclick="quiz1(2)">35件</button>
+                    <button type="button" onclick="quiz1(3)">45件</button>
+
+                    <p id="quiz1">A.</p>
+                </div>
+
+                <div>
+                    <h3>第2問　古代都市テオティワカンがあるのはどの国ですか？</h3>
+                    <p><button type="button" onclick="quiz2(0)">メキシコ合衆国</button>
+                    <p><button type="button" onclick="quiz2(1)">ハイチ共和国</button>
+                    <p><button type="button" onclick="quiz2(2)">エクアドル共和国</button>
+                    <p><button type="button" onclick="quiz2(3)">コロンビア共和国</button>
+
+                    <p id="quiz2">A.</p>
+                </div>
+
+                <div>
+                    <h3>第3問　次の写真が示す世界遺産は何ですか？</h3>
+                    <p><img src="./img/OIP.jpg" alt="ストーンヘンジ" width="400"></p>
+                    <p><button type="button" onclick="quiz3(0)">モン-サン-ミシェルとその湾</button></p>
+                    <p><button type="button" onclick="quiz3(1)">オークニー諸島の新石器時代遺跡中心地</button></p>
+                    <p><button type="button" onclick="quiz3(2)">ストーンヘンジ、エーヴベリーと関連する遺跡群</button></p>
+                    <p><button type="button" onclick="quiz3(3)">デルフィの古代遺跡</button></p>
+
+                    <p id="quiz3">A. </p>
+                </div>
+
+
+
+                <div>
+                    <h3>参考文献</h3>
+                    <dl>
+                        <dt>文化庁 「日本の世界遺産一覧」</dt>
+                        <dd>https://www.bunka.go.jp/seisaku/bunkazai/shokai/sekai_isan/ichiran/</dd>
+                    </dl>
+                    <dl>
+                        <dt>公益財団法人 日本ユネスコ協会連盟　「世界遺産について」</dt>
+                        <dd>https://www.unesco.or.jp/activities/isan/about-worldheritage/</dd>
+                    </dl>
+                </div>
+            </main>
+
+            <aside>
+                <div>
+                    <h4>その他のページへ</h4>
+                    <ul>
+                        <li><a href="../lastHomework1/index.html" target="_self">世界遺産とは?</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </section>
+    <footer>
+        Copyright &copy; YOSHINO, All Right Reserved.
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

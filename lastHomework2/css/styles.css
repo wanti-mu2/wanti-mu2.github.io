@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+html {
+    font-size: 15px;
+}
+
+#menu>ul>li {
+    display: inline;
+    padding: 5px;
+    border: 1px solid #666666;
+    border-radius: 4px;
+    background: linear-gradient(#666666, #FFFFFF)
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+.flex-container {
+    display: flex;
+}
+
+main {
+    margin: 0 10px;
+    padding: 0 10px;
+    background-color: rgb(238, 238, 237);
+    flex: 5;
+    order: 1;
+}
+
+aside {
+    margin: 0 10px;
+    padding: 0 8px;
+    background-color: rgb(242, 242, 204);
+    flex: 1;
+    order: 2;
+}
+
+h1 {
+    background: linear-gradient(rgb(171, 50, 50), rgb(249, 209, 135));
+    color: black;
+    font-size: 40px;
+}
+
+h2 {
+    background: linear-gradient(rgb(46, 243, 46), white, rgb(46, 243, 46));
+    font-size: 28px;
+}
+
+h3 {
+    border-top: 3px solid;
+    border-bottom: 1px solid;
+}
+
+button {
+    background-color: white;
+    border-radius: 20px;
+}
+
+button:hover {
+    font-size: 1.3em;
+}
+
+#quiz1 {
+    background-color: white;
+}
+
+#quiz2 {
+    background-color: white;
+}
+
+#quiz3 {
+    background-color: white;
+}
+
+.prob {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: wavy underline red;
+}
