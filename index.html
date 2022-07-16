@@ -25,96 +25,52 @@
     </header>
 
     <section>
-        <h2>世界遺産とは？</h2>
+        <h2>世界遺産QUIZ</h2>
+        <p class="prob">世界遺産の問題に挑戦してみよう！</p>
         <div class="flex-container">
             <main>
                 <div>
-                    <h3>世界遺産誕生の歴史</h3>
-                    <p>1960年代：UNESCOがヌビア遺跡(エジプト)を保存するキャンペーンを行う。</p>
-                    <p>1972年：第17回UNESCO総会にて、「世界の文化遺産及び自然遺産の保護に関する条約(世界遺産条約)」が採択</p>
-                    <p>　→2022年5月現在、世界遺産条約の締結国は194か国</p>
-                    <p>"世界遺産は、私たち一人ひとりが守り伝えていくべき人類共通の遺産"</p>
+                    <h3>第1問　2021年現在、日本の世界遺産はUNESCOに何件登録されていますか？</h3>
+                    <button type="button" onclick="quiz1(0)">15件</button>
+                    <button type="button" onclick="quiz1(1)">25件</button>
+                    <button type="button" onclick="quiz1(2)">35件</button>
+                    <button type="button" onclick="quiz1(3)">45件</button>
+
+                    <p id="quiz1">A.</p>
                 </div>
 
                 <div>
-                    <h3>世界遺産リスト</h3>
-                    <p>世界遺産は顕著な普遍的価値を有する「有形の不動産」を対称とし、3つの種類がある</p>
+                    <h3>第2問　古代都市テオティワカンがあるのはどの国ですか？</h3>
+                    <p><button type="button" onclick="quiz2(0)">メキシコ合衆国</button>
+                    <p><button type="button" onclick="quiz2(1)">ハイチ共和国</button>
+                    <p><button type="button" onclick="quiz2(2)">エクアドル共和国</button>
+                    <p><button type="button" onclick="quiz2(3)">コロンビア共和国</button>
 
-                    <table class="kind">
-                        <tr>
-                            <th></th>
-                            <th></th>
-                        </tr>
-
-                        <th>文化遺産</th>
-                        <td>記念物、建築物群、遺跡、文化的景観など</td>
-
-                        <tr>
-                            <th>自然遺産</th>
-                            <td>地形や地質、生態系、絶滅の恐れのある動植物の生息・生育地など</td>
-                        </tr>
-
-                        <tr>
-                            <th>複合遺産</th>
-                            <td>文化遺産と自然遺産の両方の価値を兼ね備えているもの</td>
-                        </tr>
-                    </table>
-
-
-                    <h4 class="list">1.　文化遺産の例</h4>
-                    <dl>
-                        <dt class="ex">アンコール</dt>
-                        <dd class="ample"><img src="./img/download.jpg" alt="アンコール・ワット" width="400"></dd>
-                        <dd class="ample">登録年：1992年</dd>
-                        <dd class="ample">国：カンボジア王国</dd>
-                    </dl>
-
-                    <h4 class="list">2.　自然遺産の例</h4>
-                    <dl>
-                        <dt class="ex">グランド・キャニオン国立公園</dt>
-                        <dd class="ample"><img src="./img/canyon-grand.jpg" alt="グランドキャニオン" width="400" class="grand">
-                        </dd>
-                        <dd class="ample">登録年：1979年</dd>
-                        <dd class="ample">国：アメリカ合衆国</dd>
-                    </dl>
-
-                    <h4 class="list">3.　複合遺産の例</h4>
-                    <dl>
-                        <dt class="ex">マチュピチュの歴史保護区</dt>
-                        <dd class="ample"><img src="./img/OIP.jpg" alt="マチュピチュ遺跡" width="400"></dd>
-                        <dd class="ample">登録年：1983年</dd>
-                        <dd class="ample">国：ペルー共和国</dd>
-                    </dl>
+                    <p id="quiz2">A.</p>
                 </div>
 
                 <div>
-                    <h3>世界遺産がもたらす社会的効果</h3>
-                    <p>「世界遺産に登録されると、世界中から多くの観光客が訪れるため、その周辺地域では大きな経済効果が見込まれる。」、そう思っている人が大多数であると考えられる。</p>
-                    <p>そこで、実際にどうなのか。1996年に登録された「原爆ドーム」と2000年に登録された「琉球王国のグスク及び関連遺産群」の観光客数の推移を比較して考えてみる。以下のグラフでは、横軸を西暦(年)、縦軸を観光客数(千人)とする。
-                    </p>
-                    <div>
-                        <canvas id="myChart"></canvas>
-                    </div>
-                    <p class="chart1">図1.　「琉球王国のグスク及び関連遺産群」と「原爆ドーム」の観光客数の推移</p>
-                    <p>以上のグラフから分かるように、「琉球王国のグスク及び関連遺産群」では2000年の世界遺産登録以降、観光客数が増加傾向にあるのに対して、「原爆ドーム」では、1996年の登録以降、観光客数が減少傾向にあると見ることができる。
-                    </p>
-                    <p>このことから、世界遺産に登録されることは、必ずしも観光客数の増加に結びつくとは限らず、経済効果が見込まれるとは限らない。そもそも、世界遺産とは"私たち一人ひとりが守り伝えていくべき人類共通の遺産"と認識されているように、経済効果を目的とするのではなく、人類共通の重要な遺産として残し続けていくという考えのもと扱っていくことが求められるのではないか、と考える。
-                    </p>
+                    <h3>第3問　次の写真が示す世界遺産は何ですか？</h3>
+                    <p><img src="./img/OIP.jpg" alt="ストーンヘンジ" width="400"></p>
+                    <p><button type="button" onclick="quiz3(0)">モン-サン-ミシェルとその湾</button></p>
+                    <p><button type="button" onclick="quiz3(1)">オークニー諸島の新石器時代遺跡中心地</button></p>
+                    <p><button type="button" onclick="quiz3(2)">ストーンヘンジ、エーヴベリーと関連する遺跡群</button></p>
+                    <p><button type="button" onclick="quiz3(3)">デルフィの古代遺跡</button></p>
+
+                    <p id="quiz3">A. </p>
                 </div>
+
+
 
                 <div>
                     <h3>参考文献</h3>
                     <dl>
+                        <dt>文化庁 「日本の世界遺産一覧」</dt>
+                        <dd>https://www.bunka.go.jp/seisaku/bunkazai/shokai/sekai_isan/ichiran/</dd>
+                    </dl>
+                    <dl>
                         <dt>公益財団法人 日本ユネスコ協会連盟　「世界遺産について」</dt>
                         <dd>https://www.unesco.or.jp/activities/isan/about-worldheritage/</dd>
-                    </dl>
-                    <dl>
-                        <dt>外務省(2022) 「国際機関を通じた協力」</dt>
-                        <dd>https://www.mofa.go.jp/mofaj/gaiko/culture/kyoryoku/unesco/isan/world/isan_1.html</dd>
-                    </dl>
-                    <dl>
-                        <dt>内閣府(2005) 「世界遺産の観光客数」</dt>
-                        <dd>https://www5.cao.go.jp/j-j/cr/cr05/chr05_1-01.html</dd>
                     </dl>
                 </div>
             </main>
@@ -123,21 +79,16 @@
                 <div>
                     <h4>その他のページへ</h4>
                     <ul>
-                        <li><a href="../lastHomework2/index.html" target="_self">世界遺産QUIZ</a></li>
+                        <li><a href="../lastHomework1/index.html" target="_self">世界遺産とは?</a></li>
                     </ul>
                 </div>
             </aside>
         </div>
     </section>
-
     <footer>
         Copyright &copy; YOSHINO, All Right Reserved.
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.js"
-        integrity="sha512-5m2r+g00HDHnhXQDbRLAfZBwPpPCaK+wPLV6lm8VQ+09ilGdHfXV7IVyKPkLOTfi4vTTUVJnz7ELs7cA87/GMA=="
-        crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
 </body>
 
 </html>
-

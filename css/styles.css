@@ -48,66 +48,38 @@ h1 {
 }
 
 h2 {
-    background-color: rgb(218, 243, 169);
+    background: linear-gradient(rgb(46, 243, 46), white, rgb(46, 243, 46));
     font-size: 28px;
 }
 
 h3 {
     border-top: 3px solid;
     border-bottom: 1px solid;
-    font-size: 20px;
 }
 
-.list {
-    background-color: rgb(3, 107, 3);
-    font-size: 18px;
-    color: white;
+button {
+    background-color: white;
+    border-radius: 20px;
 }
 
-
-table {
-    border: 2px solid black;
-    background-color: #FFFFFF;
-}
-
-th {
-    border: 1px solid black;
-    background-color: rgb(183, 183, 244);
-}
-
-td {
-    border: 1px solid black;
-}
-
-
-th:hover {
+button:hover {
     font-size: 1.3em;
 }
 
-td:hover {
-    font-size: 1.1em;
-}
-
-.ex {
-    font-size: 18px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding: 10px;
-}
-
-.ample {
-    font-size: 15px;
-    border-bottom: 1px solid;
-}
-
-.grand {
-    width: 400px;
-}
-
-canvas {
+#quiz1 {
     background-color: white;
 }
 
-.chart1 {
-    text-align: center;
-    padding: 0 0 30px 0;
+#quiz2 {
+    background-color: white;
+}
+
+#quiz3 {
+    background-color: white;
+}
+
+.prob {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: wavy underline red;
 }
